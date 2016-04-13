@@ -48,10 +48,21 @@ nav li {
 
 .main-container {
 padding:20px 100px 100px;
+max-width: 1200px;
 }
 
 .main-container img {
   max-width:325px;
   border:solid 1px #aaaaaa;
   margin:10px 10px 20px 0;
+}
+
+@media only screen and (max-width:768px) {
+  nav {
+    display:none;
+  }
+
+  .main-container {
+    padding: 30px;
+  }
 }
