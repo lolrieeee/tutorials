@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutorials</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" media="screen"charset="utf-8">
+</head>
+<body>
+<nav class="col-md-3 affix">
+  <ul>
+    <h2>Setting Up a Wordpress Environment Locally</h2>
+    <li><a href="#installing-mamp">Installing MAMP</a></li>
+    <li><a href="#setting-mamp">Setting up the Server</a></li>
+    <li><a href="#installing-wp">Installing Wordpress</a></li>
+    <li><a href="#setting-wp">Setting up a Wordpress Account</a></li>
+  </ul>
+</nav>
+
+<div class="col-md-9 col-md-offset-3 main-container">
+  <h1>Setting Up a Wordpress Environment Locally</h1>
+  <h2 id="installing-mamp">Installing MAMP</h2>
+  <p>The first step in our process will be setting up a local server using MAMP. <a href="https://www.mamp.info/en/downloads/">Go to this link</a> and download the Mac OS X version (the download will bundle a free version and a trial of the pro version which is ok and we won't use).</p>
+
+  <img src="images/wp_01.jpg" alt="">
+
+  <p>Once the download is finished, run the package. Click through the installer steps and it should begin installing and notify you when it has fully installed.</p>
+
+  <hr>
+
+  <h2 id="setting-mamp">Setting up MAMP</h2>
+  <p>Start up the MAMP application and the program should start. The first thing we will do is change the preferences. Click on the <em>Ports</em> tab and set the web and MySQL ports to 80 and 3306. Then click on the <em>Web Server</em> tab and select our root directory. This is where your wordpress folder and its files will reside. For our purposes I will choose the desktop as my root directory.</p>
+
+  <img src="images/wp_02.jpg" alt=""><img src="images/wp_02b.jpg" alt=""><img src="images/wp_02c.jpg" alt="">
+
+  <p>Once we have those settings, we can start the server and a web page should pop up. Now we will set up our database and user account. navigate the menu to tools > phpMyAdmin.</p>
+
+  <img src="images/wp_03.jpg" alt="">
+
+  <p>A new page will pop up and once the page is loaded click on the <em>Databases</em> tab. There we will create a new database and select the language it will take in. Click create and you will be taken to a new page. This is all we need from this tab, click New on the left sidebar to return to the top page.</p>
+
+  <img src="images/wp_04.jpg" alt="">
+
+  <p>Next we will create our user account. Click on the <em>Users</em> tab at the top of the page. The user overview page will appear and click add new under the new section. Create a user name of your choice and set host to local. Create your password and in global privileges, check all because this is for you and you want superpowers right? But wait, you won't havethese until you scroll down to the bottom when done and click go. Remember your database name and username for the future steps.</p>
+
+  <img src="images/wp_05.jpg" alt="">
+
+  <hr>
+
+  <h2 id="installing-wp">Installing Wordpress Locally</h2>
+  <p>Now that we have set up MAMP, we will now install wordpress locally. <a href="https://wordpress.org/download/">Go to this link</a> and download the wordpress package. Once the download is done, we will unzip it to where we chose our root directory to be earlier. In our case it would be the desktop. Make sure your server is still running on MAMP and we are ready to setup our Wordpress account!</p>
+
+  <hr>
+
+  <h2 id="setting-wp">Setting up Wordpress</h2>
+  <p>To access our wordpress locally. open a browser and enter in the address <u>localhost/wordpress/wp-admin/</u>. This will take you to a setup page where it will take you through multiple pages on initial setup. Fill out the information on the database from when you created earlier. Then create your wordpress account and site log-in and information. You should be able to log-in after that and ready to go!</p>
+
+  <img src="images/wp_06.jpg" alt="">
+  <img src="images/wp_07.jpg" alt="">
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
